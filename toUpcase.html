@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toUpcase</title>
+</head>
+<body>
+<button onclick="isFirstLetterUpperCase(prompt('Nhap chu can kiem tra'))"> Kiem tra Upcase</button>
+<p id="show"></p>
+<script>
+    function isFirstLetterUpperCase(str){
+        regexp = /^[A-Z]+$/;
+        if (regexp.test(str)) {
+            show.innerHTML=("String's character are uppercase");
+        } else {
+            show.innerHTML=("String's character are not uppercase");
+        }
+    }
+
+</script>
+</body>
+</html>
